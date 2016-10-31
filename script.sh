@@ -19,3 +19,12 @@ read major
 # Asking for last food you ate
 echo "What was the last food you ate?"
 read food
+
+# Saving the date the user answered the questions
+today() {
+    echo -n "Datestamp: "
+    date +%m-%d-%Y
+}
+
+# Tell the date answered
+echo "$(today)"
