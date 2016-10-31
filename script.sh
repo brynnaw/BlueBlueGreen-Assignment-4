@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Asking for name
+echo "What is your Name?"
+read name
+
+# Asking for favorite color
+echo "Hello $name! What is your favorite color?"
+read color
+
+# Asking for biggest fear in life
+echo "What is your biggest fear?"
+read fear
+
+# Asking for major 
+echo "What is your major?"
+read major
+
+# Asking for last food you ate
+echo "What was the last food you ate?"
+read food
