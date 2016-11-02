@@ -22,9 +22,18 @@ read food
 
 # Saving the date the user answered the questions
 today() {
-    echo -n "Datestamp: "
     date +%m-%d-%Y
 }
 
 # Tell the date answered
 echo "$(today)"
+
+# Creating a unique identifier for the User
+random()
+{
+    cat /proc/sys/kernel/random/uuid
+    }
+    
+  echo "$(random)"
+    
+echo $(random),$(today),$name,$color,$fear,$major,$food >> scriptanswers.csv 
